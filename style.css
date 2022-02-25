@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    background: url(./images/pattern-background-mobile.svg) no-repeat;
+    background-color: rgb(245, 247, 255);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+section {
+    max-width: 330px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+section img {
+    max-width: 330px;
+    border-radius: 10px 10px 0 0 ;
+}
+
+section .summary {
+    margin: 30px 25px;
+}
+
+section .summary p {
+    margin-top: 30px;
+    line-height: 21px;
+}
+
+section .payment .info {
+    display: flex;
+}
+
+section .payment .info p {
+    margin-left: 10px;
+}
+
+section .payment .info .title {
+    font-weight: bold;
+}
+
+section .payment {
+    background-color: #f8f9fe;
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 25px;
+    text-align: left;
+}
+
+section .payment a {
+    font-weight: bold;
+}
+
+section button {
+    background-color: #382ae1;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section .cancel {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+@media(min-width: 375px){
+    body {
+        background: url("./images/pattern-background-desktop.svg") no-repeat;
+        background-color: #f8f9fe;
+    }
+}
